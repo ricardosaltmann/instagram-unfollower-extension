@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InstaCleaner</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo-area">
+        <div class="logo-icon">⚡</div>
+        <div>
+          <h1 class="logo-title">InstaCleaner</h1>
+          <span class="badge">100% Gratuito & Seguro</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Status Banner -->
+    <div id="statusBanner" class="status-banner ok">
+      <span class="status-dot"></span>
+      <span id="statusText">Pronto para rodar no Instagram</span>
+    </div>
+
+    <!-- Mode Selector -->
+    <div class="section">
+      <label class="label">Velocidade de Segurança:</label>
+      <div class="speed-grid">
+        <label class="radio-card selected" id="optSlow">
+          <input type="radio" name="speed" value="slow" checked>
+          <div class="radio-content">
+            <span class="radio-title">☕ Modo Dia Inteiro (Recomendado)</span>
+            <span class="radio-desc">1 a 3 min por perfil + pausas de café. Blindagem anti-bloqueio.</span>
+          </div>
+        </label>
+        <label class="radio-card" id="optModerate">
+          <input type="radio" name="speed" value="moderate">
+          <div class="radio-content">
+            <span class="radio-title">⚡ Modo Moderado</span>
+            <span class="radio-desc">15 a 30s por perfil. Trava em 25 contas por sessão.</span>
+          </div>
+        </label>
+      </div>
+    </div>
+
+    <!-- Lista de Alvos -->
+    <div class="section">
+      <div class="section-header">
+        <label class="label">Lista de Não-Seguidores (@usuários):</label>
+        <span id="targetCounter" class="counter-badge">0 perfis</span>
+      </div>
+      <textarea id="usersInput" class="textarea" rows="4" placeholder="Cole aqui os @nomes dos perfis que não te seguem (um por linha ou separados por vírgula)..."></textarea>
+      <div class="textarea-actions">
+        <button id="btnClear" class="btn-text">Limpar</button>
+        <button id="btnLoadSaved" class="btn-text">Carregar Última Lista</button>
+      </div>
+    </div>
+
+    <!-- Controles de Ação -->
+    <div class="actions-section">
+      <button id="btnStart" class="btn btn-primary">
+        <span>🚀 Iniciar Remoção Segura</span>
+      </button>
+      <div class="btn-group hidden" id="runningGroup">
+        <button id="btnPause" class="btn btn-warning">⏸️ Pausar</button>
+        <button id="btnStop" class="btn btn-danger">⏹️ Parar</button>
+      </div>
+    </div>
+
+    <!-- Progresso em Tempo Real -->
+    <div id="progressSection" class="progress-section hidden">
+      <div class="progress-header">
+        <span id="progressTitle">Progresso:</span>
+        <span id="progressCount">0 / 0</span>
+      </div>
+      <div class="progress-bar-bg">
+        <div id="progressBar" class="progress-bar-fill" style="width: 0%"></div>
+      </div>
+      <div class="log-box" id="logBox">
+        <div class="log-line text-muted">Aguardando início...</div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <span>Privacidade Total • Roda 100% no seu navegador</span>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
