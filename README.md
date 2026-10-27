@@ -8,7 +8,13 @@ Identifique instantaneamente quem você segue e não te segue de volta no Instag
 
 ## 📸 Demonstração da Interface
 
-![InstaCleaner Preview](screenshots/preview.png)
+<div align="center">
+  <h3>1. Seleção e Análise dos Não-Seguidores</h3>
+  <img src="screenshots/list_view.png" alt="Lista de Não-Seguidores" width="650">
+  <br><br>
+  <h3>2. Execução com Barra de Progresso e Proteção Anti-Bloqueio</h3>
+  <img src="screenshots/preview.png" alt="Progresso da Remoção" width="650">
+</div>
 
 ---
 
