@@ -161,9 +161,8 @@ if (!document.getElementById('instacleaner-style')) {
       border-radius: 10px;
       font-size: 12px;
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
+      flex-direction: column;
+      gap: 8px;
     }
     .ic-speed-options {
       display: flex;

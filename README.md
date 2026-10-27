@@ -22,7 +22,12 @@ Identifique instantaneamente quem você segue e não te segue de volta no Instag
 
 - **🔍 Escaneamento Automático com 1 Clique:** Analisa seguidores e quem você segue diretamente na sua sessão oficial do Instagram, sem que você precise digitar ou colar listas.
 - **🛡️ Algoritmo Anti-Bloqueio (Modo Dia Inteiro):** Simula pausas humanas realistas com intervalos de 1 a 3 minutos entre perfis e **Pausas para Café automáticas de 10 a 20 minutos** a cada lote de 10 contas.
-- **⚡ Modo Rápido:** Intervalo de 15 a 30 segundos para remoções menores.
+- **⚡ Modo Rápido:** Intervalo de 15 a 30 segundos com limite de segurança por sessão.
+
+> 💡 **Recomendação Anti-Bloqueio Importante:**  
+> O Instagram possui algoritmos rígidos que detectam ações repetitivas e em massa. Para **evitar bloqueios temporários (Action Block) por parte do Instagram**:
+> - Para contas grandes com centenas de não-seguidores, utilize sempre o **Modo Dia Inteiro** (que simula comportamento 100% humano com pausas programadas).
+> - Se optar pelo **Modo Rápido**, utilize em lotes pequenos e com intervalos de descanso ao longo do dia para manter sua conta protegida.
 - **🎯 Controle Total:**
   - Barra de busca instantânea para filtrar amigos ou perfis específicos.
   - "Selecionar Todos" ou "Desmarcar Todos".

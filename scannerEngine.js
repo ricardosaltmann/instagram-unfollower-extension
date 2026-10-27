@@ -74,7 +74,10 @@
 
           <!-- Configuração de Velocidade -->
           <div class="ic-speed-box">
-            <b>Modo de Remoção Automática:</b>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <b>Modo de Remoção Automática:</b>
+              <span style="font-size: 11px; background: #fef3c7; color: #92400e; padding: 2px 8px; border-radius: 6px; font-weight: 600;">🛡️ Proteção Anti-Bloqueio</span>
+            </div>
             <div class="ic-speed-options">
               <label>
                 <input type="radio" name="ic-speed" value="slow" checked>
@@ -84,6 +87,9 @@
                 <input type="radio" name="ic-speed" value="moderate">
                 ⚡ Modo Rápido (15 a 30 seg)
               </label>
+            </div>
+            <div style="font-size: 11px; color: #92400e; background: #fffbeb; border: 1px solid #fde68a; padding: 6px 10px; border-radius: 6px; line-height: 1.4;">
+              💡 <b>Recomendação Anti-Bloqueio do Instagram:</b> Para evitar bloqueios temporários por parte do Instagram, escolha sempre a velocidade com cautela. Para listas grandes, o Modo Dia Inteiro garante intervalos humanos e pausas automáticas; utilize o Modo Rápido para limpezas pontuais em lotes menores.
             </div>
           </div>
 
