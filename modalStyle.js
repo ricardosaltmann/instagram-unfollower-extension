@@ -1,4 +1,4 @@
-// Estilos injetados no Instagram
+// Estilos injetados no Instagram - Versão Ampliada e Confortável
 if (!document.getElementById('instacleaner-style')) {
   const style = document.createElement('style');
   style.id = 'instacleaner-style';
@@ -18,9 +18,9 @@ if (!document.getElementById('instacleaner-style')) {
     .ic-dialog {
       background: #ffffff;
       width: 95%;
-      max-width: 580px;
-      height: 90vh;
-      max-height: 720px;
+      max-width: 760px; /* Janela mais larga */
+      height: 94vh;
+      max-height: 880px; /* Janela mais alta */
       border-radius: 16px;
       display: flex;
       flex-direction: column;
@@ -33,7 +33,7 @@ if (!document.getElementById('instacleaner-style')) {
       to { opacity: 1; transform: scale(1); }
     }
     .ic-header {
-      padding: 16px 20px;
+      padding: 14px 20px;
       border-bottom: 1px solid #e2e8f0;
       display: flex;
       justify-content: space-between;
@@ -59,7 +59,7 @@ if (!document.getElementById('instacleaner-style')) {
     .ic-close {
       background: none;
       border: none;
-      font-size: 22px;
+      font-size: 24px;
       color: #64748b;
       cursor: pointer;
       line-height: 1;
@@ -73,15 +73,15 @@ if (!document.getElementById('instacleaner-style')) {
     .ic-body {
       flex: 1;
       overflow-y: auto;
-      padding: 20px;
+      padding: 16px 20px;
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: 12px;
     }
     .ic-desc {
-      font-size: 13px;
-      color: #475569;
-      line-height: 1.5;
+      font-size: 12px;
+      color: #64748b;
+      line-height: 1.4;
     }
     .ic-stats-row {
       display: grid;
@@ -90,7 +90,7 @@ if (!document.getElementById('instacleaner-style')) {
     }
     .ic-stat-card {
       background: #f1f5f9;
-      padding: 12px;
+      padding: 8px 12px;
       border-radius: 10px;
       text-align: center;
     }
@@ -102,7 +102,7 @@ if (!document.getElementById('instacleaner-style')) {
     .ic-stat-lbl {
       font-size: 11px;
       color: #64748b;
-      margin-top: 2px;
+      margin-top: 1px;
     }
     .ic-stat-card.highlight {
       background: #fef2f2;
@@ -117,7 +117,7 @@ if (!document.getElementById('instacleaner-style')) {
       align-items: center;
     }
     .ic-btn {
-      padding: 10px 18px;
+      padding: 9px 16px;
       border-radius: 8px;
       font-size: 13px;
       font-weight: 600;
@@ -157,12 +157,13 @@ if (!document.getElementById('instacleaner-style')) {
     .ic-speed-box {
       background: #f8fafc;
       border: 1px solid #e2e8f0;
-      padding: 12px;
+      padding: 10px 14px;
       border-radius: 10px;
       font-size: 12px;
       display: flex;
-      flex-direction: column;
-      gap: 6px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
     }
     .ic-speed-options {
       display: flex;
@@ -181,8 +182,8 @@ if (!document.getElementById('instacleaner-style')) {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 10px;
-      margin-top: 4px;
+      gap: 12px;
+      margin-top: 2px;
     }
     .ic-search {
       flex: 1;
@@ -201,23 +202,28 @@ if (!document.getElementById('instacleaner-style')) {
       cursor: pointer;
       white-space: nowrap;
       user-select: none;
+      font-weight: 500;
     }
     .ic-select-all:hover {
       text-decoration: underline;
     }
+    /* Lista agora ocupa muito mais espaço vertical */
     .ic-list {
+      flex: 1;
+      min-height: 380px; /* Área de rolagem bem maior */
+      max-height: 520px;
       display: flex;
       flex-direction: column;
       border: 1px solid #e2e8f0;
       border-radius: 10px;
-      max-height: 280px;
       overflow-y: auto;
+      background: #ffffff;
     }
     .ic-item {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 8px 12px;
+      padding: 9px 14px;
       border-bottom: 1px solid #f1f5f9;
       transition: background 0.15s;
     }
@@ -227,15 +233,19 @@ if (!document.getElementById('instacleaner-style')) {
     .ic-item:hover {
       background: #f8fafc;
     }
+    .ic-item.active-processing {
+      background: #eff6ff;
+      border-left: 3px solid #2563eb;
+    }
     .ic-user-info {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
       min-width: 0;
     }
     .ic-avatar {
-      width: 36px;
-      height: 36px;
+      width: 40px;
+      height: 40px;
       border-radius: 50%;
       object-fit: cover;
       background: #e2e8f0;
@@ -258,7 +268,7 @@ if (!document.getElementById('instacleaner-style')) {
       color: #2563eb;
     }
     .ic-fullname {
-      font-size: 11px;
+      font-size: 12px;
       color: #64748b;
       white-space: nowrap;
       overflow: hidden;
@@ -266,9 +276,9 @@ if (!document.getElementById('instacleaner-style')) {
     }
     .ic-status-tag {
       font-size: 11px;
-      padding: 2px 8px;
+      padding: 3px 9px;
       border-radius: 6px;
-      font-weight: 500;
+      font-weight: 600;
     }
     .ic-status-removed {
       background: #dcfce7;
@@ -278,10 +288,10 @@ if (!document.getElementById('instacleaner-style')) {
       background: #f8fafc;
       border: 1px solid #e2e8f0;
       border-radius: 10px;
-      padding: 12px;
+      padding: 10px 14px;
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      gap: 6px;
     }
     .ic-progress-bar-bg {
       width: 100%;
@@ -302,7 +312,7 @@ if (!document.getElementById('instacleaner-style')) {
       color: #475569;
     }
     .ic-footer {
-      padding: 12px 20px;
+      padding: 10px 20px;
       border-top: 1px solid #e2e8f0;
       background: #f8fafc;
       font-size: 12px;

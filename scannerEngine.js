@@ -408,7 +408,14 @@
       }
 
       logMsg.innerText = `Desseguindo @${target.username}...`;
+      const itemEl = usersListEl.querySelector(`[data-id="${target.id}"]`);
+      if (itemEl) {
+        itemEl.classList.add('active-processing');
+        itemEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+
       const ok = await performSingleUnfollow(target.id);
+      if (itemEl) itemEl.classList.remove('active-processing');
 
       if (ok) {
         completed++;
